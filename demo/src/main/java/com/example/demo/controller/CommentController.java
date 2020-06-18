@@ -56,6 +56,11 @@ public class CommentController {
         return commentService.findAllByCid(postId);
 
     }
+    
+    @GetMapping("/{post_id}/comm")
+    public Iterable<Comment> getComments(){
+        
+    }
 
 
 }
